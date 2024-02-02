@@ -18,15 +18,16 @@ const Socials = () => {
   // Function to handle click and open email client
   const handleEnvelopeClick = () => {
     const email = "ramtelabhi04@gmail.com";
-    const subject = "Subject of the email";
-    const body = "Body of the email";
+    window.location.href = `mailto:${email}`;
+    // const subject = "Subject of the email";
+    // const body = "Body of the email";
 
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    // const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+    //   subject
+    // )}&body=${encodeURIComponent(body)}`;
 
-    // Open the user's email client
-    window.location.href = mailtoLink;
+    // // Open the user's email client
+    // window.location.href = mailtoLink;
   };
 
   return (
