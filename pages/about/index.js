@@ -8,6 +8,13 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaPython,
+  FaJava,
+  FaGithub,
+  FaGit,
+  FaLinux,
+  FaPhp,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
@@ -30,14 +37,24 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          // <SiFramer />,
+          // <FaWordpress />,
+          <FaPhp/>,
+          <FaNodeJs/>,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Languages",
+        icons: [<FaHtml5 />,<FaCss3 />,<FaJs />,<FaReact />,<SiNextdotjs />, <FaPython/>,<FaJava/>,],
       },
+      // {
+      //   title: "UI/UX Design",
+      //   icons: [<FaFigma />],
+      // },
+      {
+        title: "Tools",
+        icons:[<FaGithub/>, <FaGit/>,<FaFigma />,<FaLinux/>,]
+      }
     ],
   },
   {
