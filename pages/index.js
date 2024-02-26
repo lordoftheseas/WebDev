@@ -1,22 +1,26 @@
-//next image
+import { useState, useEffect } from "react";
 import Image from "next/image";
-
-//components
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
-
-// framer motion
-import { motion } from "framer-motion";
-
-//variants
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants";
 
+const roles = ["a student", "a developer", "an engineer"];
+
 const Home = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000); // Change role every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
-
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
@@ -27,8 +31,18 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Hi, My name is Abhi <br /> I am{" "}
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={roles[index]}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="text-accent"
+              >
+                {roles[index]}
+              </motion.span>
+            </AnimatePresence>
           </motion.h1>
           {/* subtitles */}
           <motion.p
