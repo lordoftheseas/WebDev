@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { animate, motion } from "framer-motion";
 import Image from "next/image";
+// whole lotta red whole lotta red whole lotta red
 
 // icons
 import {
