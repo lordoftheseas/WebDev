@@ -13,6 +13,8 @@ import emailjs from "@emailjs/browser";
 
 import { useState, useEffect } from "react";
 
+import Bulb from "../../components/Bulb";
+
 const Contact = () => {
   const formRef = useRef();
   const [emailSent, setEmailSent] = useState(false); // Add this line
@@ -130,6 +132,7 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
+      <Bulb />
     </div>
   );
 };
