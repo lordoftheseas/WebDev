@@ -20,6 +20,7 @@ import {
   FaPhp,
   FaNodeJs,
   FaArrowDown,
+  FaArrowUp,
 } from "react-icons/fa";
 
 import {
@@ -43,21 +44,14 @@ const About = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll lg:flex">
-        {" "}
-        {/* flex justify-center to center this here*/}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-32 xl:gap-64 w-2/3 xl:1/2">
-          <div className="fixed right-0 top-100 hidden lg:block w-1/3 xl:1/2">
-            <Image
-              src="/avatar3.png"
-              alt="Your Image"
-              width={500}
-              height={500}
-            />
-          </div>
+      <div className="h-full overflow-scroll lg:flex justify-center">
+        <div
+          className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-32 xl:gap-64 w-4/4 xl:1/2"
+          style={{ paddingTop: "150px" }}
+        >
           <div>
             <div
-              className="flex flex-col gap-14 justify-center h-full"
+              className="flex flex-col gap-4 h-screen"
               id="biography-section"
             >
               <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
@@ -69,16 +63,12 @@ const About = () => {
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur.
               </p>
-              {/* BIOGRAPHY QUOTE  */}
               <span className="italic">
-                A handcrafted, small-batch, artisinal pour-over version of the
-                classic lorem ipsum generato.
+                A handcrafted, small-batch, artisanal pour-over version of the
+                classic lorem ipsum generator.
               </span>
-              {/* OUR SVG SIGNATURE BELOW */}
-              {/* <div className="self-end"></div> */}
-              {/* <div className="self-end">SVG content</div> */}
               <button
-                className="text-4xl text-gray-500 cursor-pointer"
+                className="flex items-center justify-center border border-gray-300 rounded-full w-12 h-12 text-gray-500 cursor-pointer hover:bg-gray-100"
                 onClick={() => handleScroll("skills-section")}
               >
                 <FaArrowDown />
@@ -92,7 +82,6 @@ const About = () => {
               id="skills-section"
             >
               <h1 className="font-bold text-2xl">SKILLS</h1>
-              {/* SKILLS LIST */}
               <div className="flex gap-4 flex-wrap">
                 <div className="flex items-center rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Python
@@ -156,7 +145,7 @@ const About = () => {
                 </div>
               </div>
               <button
-                className="text-4xl text-gray-500 cursor-pointer"
+                className="flex items-center justify-center border border-gray-300 rounded-full w-12 h-12 text-gray-500 cursor-pointer hover:bg-gray-100"
                 onClick={() => handleScroll("experience-section")}
               >
                 <FaArrowDown />
@@ -215,6 +204,12 @@ const About = () => {
                   </div>
                 ))}
               </div>
+              <button
+                className="flex items-center justify-center border border-gray-300 rounded-full w-12 h-12 text-gray-500 cursor-pointer hover:bg-gray-100"
+                onClick={() => handleScroll("biography-section")}
+              >
+                <FaArrowUp />
+              </button>
             </div>
           </div>
         </div>
