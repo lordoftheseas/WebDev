@@ -201,8 +201,15 @@ const About = () => {
                       <div className="p-3 text-red-400 text-sm font-semibold">
                         {experience.date}
                       </div>
-                      <div className="p-1 rounded bg-white text-sm font-semibold text-black w-fit">
-                        {experience.company}
+                      <div className="p-1 rounded text-sm font-semibold text-black">
+                        <button
+                          className="block w-fit bg-white border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"
+                          onClick={() => {
+                            window.open(experience.link, "_blank");
+                          }}
+                        >
+                          {experience.company}
+                        </button>
                       </div>
                     </div>
                   </div>

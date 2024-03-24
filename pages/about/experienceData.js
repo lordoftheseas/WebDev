@@ -9,6 +9,7 @@ const experienceData = [
       "Coded graphical user interfaces in C using Glib and GTK.",
       "Developed and implemented specific Markov models of ion channel gating for use in a real-time solver.",
     ],
+    link: "https://cytocybernetics.com",
   },
   {
     jobTitle: "Tech Consultant",
@@ -18,6 +19,7 @@ const experienceData = [
       "Facilitated dedicated faculty, students, and alumni with comprehensive IT consultation services.",
       "Addressed a range of technical issues including computer, networking, UB dedicated applications, and accounts at both the walk-up location and the gaming center.",
     ],
+    link: "",
   },
   {
     jobTitle: "Undergraduate Teaching Assistant (CSE: 199 - Seminar)",
@@ -28,6 +30,7 @@ const experienceData = [
       "Coordinated with faculty to deliver seven-module course content.",
       "Guided students through a wide range of computer science concepts, establishing a strong academic foundation.",
     ],
+    link: "",
   },
   {
     jobTitle: "Undergraduate Research Assistant",
@@ -37,6 +40,7 @@ const experienceData = [
       "Collaborated on research supervised by Dr. Negar Khorasani, assessing the vulnerability of houses in wildfire-prone areas.",
       "Analyzed post-wildfire data to correlate construction features with damage levels.",
     ],
+    link: "",
   },
   {
     jobTitle: "Undergraduate Research Assistant",
@@ -47,6 +51,7 @@ const experienceData = [
       "Analyzed over 7000+ datasets covering the frequency of misinformation shared among elderly people.",
       "Developed proficiency in Python libraries pandas and NumPy for data wrangling purposes.",
     ],
+    link: "",
   },
 ];
 
