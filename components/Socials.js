@@ -21,12 +21,12 @@ const Socials = () => {
     // window.location.href = resumePath;
   };
 
-  const handleIconClick = () => {
-    const resumePath = "/resume.pdf"; // Replace with the actual path to your resume file
-    window.open(resumePath, "_blank"); // Opens the resume in a new tab
-    // Alternatively, you can download the resume by changing the above line to:
-    // window.location.href = resumePath;
-  };
+  // const handleIconClick = () => {
+  //   const resumePath = "/resume.pdf"; // Replace with the actual path to your resume file
+  //   window.open(resumePath, "_blank"); // Opens the resume in a new tab
+  //   // Alternatively, you can download the resume by changing the above line to:
+  //   // window.location.href = resumePath;
+  // };
 
   return (
     <div className="flex items-center gap-x-5 text-lg">
@@ -55,12 +55,22 @@ const Socials = () => {
 
       {/* LinkedIn Icon */}
       <a
-        href="https://www.linkedin.com"
+        href="http://www.linkedin.com/in/abhi-ramtel"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition-all duration-300"
       >
         <RiLinkedinFill />
+      </a>
+
+      {/* GitHub Icon */}
+      <a
+        href="http://www.github.com/lordoftheseas"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiGithubFill />
       </a>
 
       {/* Instagram Icon */}
@@ -71,16 +81,6 @@ const Socials = () => {
         className="hover:text-accent transition-all duration-300"
       >
         <RiInstagramFill />
-      </a>
-
-      {/* GitHub Icon */}
-      <a
-        href="https://github.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiGithubFill />
       </a>
 
       {/* Phone Icon */}

@@ -103,25 +103,32 @@ const Contact = () => {
                 name="user_name"
                 className="input"
                 placeholder="Name"
+                autoComplete="off"
+                autoCapitalize="none"
               ></input>
               <input
                 type="text"
                 name="user_email"
                 className="input"
-                placeholder="email"
+                placeholder="Email"
+                autoComplete="off"
                 autocapitalize="none"
               ></input>
             </div>
             <input
               type="text"
-              name="message"
+              name="message_sub"
               className="input"
               placeholder="Subject"
+              autoComplete="off"
+              autoCapitalize="none"
             ></input>
             <textarea
-              name="message_body"
+              name="message"
               placeholder="Message"
               className="textarea"
+              autoComplete="off"
+              autoCapitalize="none"
             ></textarea>
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">

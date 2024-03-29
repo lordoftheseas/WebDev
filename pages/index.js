@@ -6,7 +6,7 @@ import Avatar from "../components/Avatar";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const roles = ["a student", "a developer", "an engineer"];
+const roles = ["a student", "a developer", "an future engineer"];
 
 const Home = () => {
   const [index, setIndex] = useState(0);
